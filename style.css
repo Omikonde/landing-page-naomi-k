@@ -1,0 +1,209 @@
+/* Write some CSS below */
+
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  color: black;
+  font-size: 18px;
+  font-family:'cormorant';
+}
+
+
+h1, h2, h3 {
+  font-family: 'anuphan';
+}
+
+h1 {
+  color: white;
+  font-size: 46px;
+  font-style: italic;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  color: rosybrown;
+}
+
+h3 {
+color: rosybrown;
+font-family: 'Roboto', sans-serif;
+font-size: 22px;
+text-align: center;
+
+}
+
+a{
+  text-decoration: none;
+}
+
+.banner {
+  height: 500px;
+  overflow: hidden !important;
+}
+
+iframe {
+  position: relative;
+  pointer-events: none;
+  height: 200%;
+  width: 200%;
+  top: -50%;
+  left: -50%;
+}
+
+#intro {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  padding-top: 125px;
+}
+
+
+.banner p{
+  font-weight: 400;
+  font-size: 24px;
+  color: #ffffff;
+  margin-bottom: 40px;
+  font-style: italic;
+}
+
+.btn-blue {
+  background-color: rgba(188, 143, 143, 0.454);
+  color: white;
+  border-radius: 4px;
+  padding: 20px 50px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  border-radius: 65px;
+}
+
+.btn-blue:hover {
+  color:black;
+  background-color:rgb(198, 228, 198);
+}
+
+.Menu {
+  background-color: rgb(198, 228, 198); 
+  color: white; 
+  padding: 150px;
+}
+
+.btn-rose{ 
+background-color: white;
+color: rosybrown;
+border-radius: 4px;
+padding: 50px 50px;
+font-family: 'Roboto', sans-serif;
+font-size: 15px;
+font-weight: 700;
+border-radius: 65px;
+}
+
+.btn-rose:hover {
+  color: black;
+  background-color: rosybrown;
+}
+
+#btn-rose2{
+  z-index: 998;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+.container {
+  width: 900px;
+  margin: 20px auto;
+}
+
+.card-white {
+  background-color: rgba(198, 228, 198, 0);
+  padding: 13px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  margin: 4px;
+  border-radius: 5px;
+  border: 1px solid rgb(198, 228, 198);
+}
+
+.card-white p{
+  font-size: 15px;
+  color: black;
+  text-align: center;
+  text-align: justify; 
+}
+
+.card-white img{
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 100px;
+}
+
+.footer {
+  background-color: rosybrown;
+  color: white;
+  padding: 40px 0;
+}
+
+.footer p {
+  font-size: 15px;
+}
+
+.cards-inline{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 16px;
+}
+
+.btn-client {
+  background-color: white;
+  color: rosybrown;
+  border-radius: 4px;
+  padding: 10px 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  float:right;
+  border-radius: 25px;
+}
+
+.btn-client:hover{
+  background-color:  rgb(198, 228, 198);
+}
+
+
+/* Breaking points */
+@media (max-width: 960px){
+  .container {
+    width: 900px;
+  }
+
+  .cards-inline{
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (max-width: 720px){
+  .container {
+    width: 680px;
+  }
+  .cards-inline {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 540px){
+  .container {
+    width: 480px;
+  }
+  .cards-inline{
+    grid-template-columns: 1fr;
+  }
+}
